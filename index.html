@@ -3,99 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="reset" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="assets/fontawesome-free-6.6.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/fontawesome-free-6.6.0-web/css/brands.css" rel="stylesheet">
+    <link href="assets/fontawesome-free-6.6.0-web/css/solid.css" rel="stylesheet">
+    <title>Dashboard</title>
   </head>
-  <header>
-    <div class="search-bar-top"></div>
-    <!-- add images here-->
-   
-    <h5>Hi there,</h5>
-    <h1>Natalia (@natalia)</h1>
-    <button class="btn-header">New</button>
-    <button class="btn-header">Upload</button>
-    <button class="btn-header">Share</button>
 
-
-  </header>
   <body>
-    <div class="sidebar">
-        <h3>Dashboard</h3>
-        <ul>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
-        </ul>
-       <ul>
-        <li>Settings</li>
-        <li>Support</li>
-        <li>Privacy Policy</li>
-       </ul>
-    </div>
+    <div class="main-container">
+      <div class="sidebar">
+        <h3><i class="fa-solid fa-bars"></i> Dashboard</h3>
+        <div class="sidebar-container-top">
+          <p><i class="fa-solid fa-house"></i> Home</p>
+          <p><i class="fa-regular fa-user"></i> Profile</p>
+          <p><i class="fa-regular fa-message"></i> Messages</p>
+          <p><i class="fa-solid fa-clock-rotate-left"></i> History</p>
+          <p><i class="fa-solid fa-list-check"></i> Tasks</p>
+          <p><i class="fa-solid fa-people-group"></i> Communities</p>
+        </div>
+        <div class="sidebar-container-bottom">
+          <p><i class="fa-solid fa-gears"></i>Settings</p>
+          <p><i class="fa-solid fa-question"></i> Support</p>
+          <p><i class="fa-solid fa-shield-halved"></i>Privacy Policy</p>
+        </div>
+      </div>
+      <div class="header">
+        <div class="header-top">
+          <div class="search-bar-top"><i class="fa-solid fa-magnifying-glass"></i>search bar</div>
+          <i class="fa-regular fa-bell"></i>
+          <img src="assets/images/profile.png" alt="profile picture">
+          <div class="profile-picture">picture</div>
+        </div>
+        <div class="header-bottom">
+           <!--image profile  -->
+          <div class="user-info">
+            <p>Hi there,</p>
+          </div>
+          <div class="buttons-container">
+            <button class="btn-header">New</button>
+            <button class="btn-header">Upload</button>
+            <button class="btn-header">Share</button>
+          </div>
+        </div>
+      </div>
+      <div class="projects-announcements-trending-container">
+        <div class="projects-container">
+          <div class="project">
+            <h4>Project 1</h4>
+            <p>This is the description of project 1</p>
+          </div>
+          <div class="project">
+            <h4>Project 2</h4>
+            <p>This is the description of project 2</p>
+          </div>
+          <div class="project">
+            <h4>Project 3</h4>
+            <p>This is the description of project 2</p>
+          </div>
+          <div class="project">
+            <h4>Project 4</h4>
+            <p>This is the description of project 2</p>
+          </div>
+          <div class="project">
+            <h4>Project 5</h4>
+            <p>This is the description of project 2</p>
+          </div>
+          <div class="project">
+            <h4>Project 6</h4>
+            <p>This is the description of project 2</p>
+          </div>
+        </div>
+        <div class="announcements-trending-container">
+          <div class="announcement-container">
+            <h3>Announcements</h3>
+            <div class="background-announcement">
+              <div class="Announcement">
+                <h4>Announcement 1</h4>
+                <p>This is the description of announcement</p>
+              </div>
+              <div class="announcement">
+                <h4>Announcement 2</h4>
+                <p>This is the description of announcement</p>
+              </div>
+              <div class="announcement">
+                <h4>Announcement 2</h4>
+                <p>This is the description of announcement</p>
+              </div>
+            </div>
+          </div>
 
-    <div class="project-container">
-      <h3>Your projects</h3>
-      <div class="project">
-        <h4>Project 1</h4>
-        <p>This is the description of project 1</p>
-      </div>
-      <div class="project">
-        <h4>Project 2</h4>
-        <p>This is the description of project 2</p>
-      </div>
-      <div class="project">
-        <h4>Project 3</h4>
-        <p>This is the description of project 2</p>
-      </div>
-      <div class="project">
-        <h4>Project 4</h4>
-        <p>This is the description of project 2</p>
-      </div>
-      <div class="project">
-        <h4>Project 5</h4>
-        <p>This is the description of project 2</p>
-      </div>
-      <div class="project">
-        <h4>Project 6</h4>
-        <p>This is the description of project 2</p>
-      </div>
-    </div>
-
-    <div class="announcement-container">
-      <h3>Announcements</h3>
-      <div class="Announcement">
-        <h4>Announcement 1</h4>
-        <p>This is the description of announcement</p>
-      </div>
-      <div class="announcement">
-        <h4>Announcement 2</h4>
-        <p>This is the description of announcement</p>
-      </div>
-      <div class="announcement">
-        <h4>Announcement 2</h4>
-        <p>This is the description of announcement</p>
-      </div>
-    </div>
-
-    <div class="trending-container">
-      <h3>Trending</h3>
-      <div class="trending">
-        <h4>Trending 1</h4>
-        <p>This is the description of trending</p>
-      </div>
-      <div class="trending">
-        <h4>Trending 2</h4>
-        <p>This is the description of trending</p>
-      </div>
-      <div class="trending">
-        <h4>Trending 3</h4>
-        <p>This is the description of trending</p>
-      </div>
-      <div class="trending">
-        <h4>Trending 4</h4>
-        <p>This is the description of trending</p>
+          <div class="trending-container">
+            <h3>Trending</h3>
+            <div class="trending">
+              <h4>Trending 1</h4>
+              <p>This is the description of trending</p>
+            </div>
+            <div class="trending">
+              <h4>Trending 2</h4>
+              <p>This is the description of trending</p>
+            </div>
+            <div class="trending">
+              <h4>Trending 3</h4>
+              <p>This is the description of trending</p>
+            </div>
+            <div class="trending">
+              <h4>Trending 4</h4>
+              <p>This is the description of trending</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

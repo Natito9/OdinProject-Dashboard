@@ -6,147 +6,267 @@
 
 /*structure*/
 
-body{
+body {
     font-family: "Raleway","safiro-medium","roboto";
     font-size: 0.8rem;
     margin: 0;
     height: 100vh;
+  
 }
-.main-container{
+
+button {
+    border-radius: 25px;
+    padding: 10px 15px;
+    margin: 10px;
+    border:none;
+}
+.main-container {
     height: 100%;
     display: grid;
-   
-    grid-template-columns: 20vw 80vw;
-    grid-template-rows: 10vh 90vh;
+    grid-template-columns: 15vw 85vw;
+    grid-template-rows: 20vh 80vh;
  
 }
-.sidebar{
+.sidebar {
     height: 100%;
     grid-column: 1;
     grid-row: 1/3;
 }
-.header{
+.header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
    
 }
-.header-top{
+.notifications-container {
     display: flex;
-    justify-content: space-around;
-    height: 50%;
-
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
 }
-.header-bottom{
+.header-bottom {
+    
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 50%;
 }
-.projects-announcements-trending-container{
+.buttons-container{
+    display: flex;
+    justify-items: end;
+    align-items: center;
+    gap: 1rem;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.projects-announcements-trending-container {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 100%;
     gap: 1rem;
+    position:relative;
 }
-.projects-container{
+.projects-container {
     height: 100%;
     grid-column: 1/3;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(3,1fr);
-    gap: 2rem;
+    gap: 1rem;
     
 }
-.announcements-trending-container{
+.announcements-trending-container {
     height: 100%;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
    gap: 2rem;
 }
-.announcement{
+.announcement {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   overflow: hidden;
+}
+.trending {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 
-/* styling*/
-h3{
-    text-transform: uppercase;
-    text-align: auto;
+/*   styling    */
+
+body {
+    background-color: black;
+    color:rgb(245, 245, 245);
 }
 
 /* sidebar styling*/
-.sidebar{
-    background-color: rgb(255, 255, 255); 
-    color: rgb(0, 0, 0);
+.sidebar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-right: 0.2px solid rgb(0, 0, 0);
-    border-radius: 25px;
     padding: 1rem;
     box-shadow: 0 0 10px 0 rgb(106, 106, 106);
 }
-.sidebar-container-bottom{
+.sidebar-container-top {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.sidebar-container-bottom {
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
 }
-/*header styling*/
-.header{
-    background-color: rgb(255, 255, 255);
-    border-bottom: 0.2px solid rgb(0, 0, 0);
-
-    padding: 1rem;
-
-}
-.header-top{
-
-}
-.header-bottom{
-
+.sidebar i {
+    padding-left: 1rem;
+    padding-right: 0.7rem;
     font-size: 1rem;
 }
+/*header styling*/
+.header {
+    border-bottom: 0.2px solid rgb(0, 0, 0);
+    padding: 1rem;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+.fa-magnifying-glass {
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+.fa-bell {
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+.fa-bell:hover {
+    transform: scale(1.5);
+    transition: 0.2s;
+}
+.search-bar-input {
+    width:35vw;
+    height: 1.5rem;
+    border-radius: 25px;
+    border: none;
+    background-color: rgba(237, 233, 233, 0.999, 0.3);
+}
 /*projects styling*/
-.projects-container{
-  
+.projects-container {
+  padding-top:50px;
+  padding-left: 20px;
     
 }
-.project{
-    background-color: rgb(253, 253, 253);
+.project {
     gap: 1rem;
     margin: 1rem;
-    padding: 0.5rem;
-    box-shadow: 5px 5px 10px 0 rgb(212, 212, 212);
-    border-radius: 10px;
-  
+    padding: 1rem;
+    border-left: 1px solid rgb(42, 42, 42);
+    border-bottom: 1px solid gray; ;
+    position:relative;
+}
+.project:hover {
+    background-color: rgb(253, 253, 253,0.2);
+    transition:0.2s;
+}
+.project-icons {
+   position:absolute;
+   right: 30px;
+   bottom: 20px;
+}
+.project-icons i{
+   padding:5px;
+ }
+
+.project i:hover {
+    transform: scale(1.5);
+    transition: 0.2s;
 }
 
 /*announcements styling*/
-.announcement-container{
+.announcement-container {
     height: 50%;
+    overflow:auto;
    
 }
-.background-announcement{
-   background-color: rgb(249, 224, 241);
+.background-announcement {
    overflow:auto;
    gap: 1rem;
    margin: 1rem;
    padding: 0.5rem;
-   box-shadow: 1px 1px 10px 0 rgb(106, 106, 106);
+   border-left: 1px solid gray;
    border-radius: 10px;
 }
 /*trending styling*/
-.trending-container{
-    background-color: rgb(222, 219, 255);
+.trending-container {
+    height: 50%;
     overflow:auto;
+
+}
+.background-trending {
+
     gap: 1rem;
     margin: 1rem;
     padding: 0.5rem;
-    box-shadow: 5px 5px 10px 0 rgb(106, 106, 106);
+    border-left: 1px solid gray;
     border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+}
+.trending-title {
+    display:flex;
+    align-self: flex-start;
+    gap:1rem;
+    font-size: 0.9rem;
+ }
+ .trending-image {
+    width: 1.8rem;
+    height: 2rem;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 3px;
+    background-color: azure;
+    margin:auto;
+}
+ .trending p {
+    text-align: left;
+    margin-left: 55px;
+ }
+/* small thing */
+h3 {
+    text-transform: uppercase;
+    text-align: auto;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: 100%;
+    display:block;
+    margin:0 auto;
+}
+.profile-image-top{
+    max-width: 70%;
+    height: 70%;
+    display:block;
+}
+.text1 {
+    position:absolute;
+    top: 0px;
+    left: 30px;
+}
+
+hr {
+    border-width: 0.1px;
+    border-color: rgb(83, 83, 83);
 }
